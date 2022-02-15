@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<title>A_Naturography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/Style.css" />
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: 'Sofia';font-size: 22px;}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src=".jpeg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+  
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Ashwik Bire.</h1>
+   <p>Photographer and Web Designer.</p>
+	 
+	<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: 'Sofia';, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="kitten-cat-butterflies-.jpg" style="width:100%">
+  <div class="text">WELCOME TO A_NATUROGRAPHY</div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="ef.jpg" style="width:100%">
+  <div class="text">Hope You will have definatly like Our Website </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="kkk.jpg" style="width:100%">
+  <div class="text">Nature teaches more than she preaches. There are no sermons in stones. It is easier to get a spark out of a stone than a moral. —John Burroughs</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="sss.jpg" style="width:100%">
+  <div class="text"> It is not so much for its beauty that the forest makes a claim upon men’s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit. —Robert Louis Stevenson
+
+</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"> 5/ 10</div>
+  <img src="deer.png" style="width:100%">
+  <div class="text"> There is something infinitely healing in the repeated refrains of nature—the assurance that dawn comes after night, and spring after winter. —Rachel Carson
+
+</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"> 6/ 10</div>
+  <img src="as.png" style="width:100%">
+  <div class="text"> Some of nature’s most exquisite handiwork is on a miniature scale, as anyone knows who has applied a magnifying glass to a snowflake. —Rachel Carson
+
+</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"> 7/ 10</div>
+  <img src="AA1.png" style="width:100%">
+  <div class="text"> I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived. —Henry David Thoreau
+
+
+</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"> 8/ 10</div>
+  <img src="wolf.png" style="width:100%">
+  <div class="text">I think nature’s imagination is so much greater than man’s, she’s never going to let us relax. —Richard Feynman
+
+</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"> 9/ 10</div>
+  <img src="ele.jpg" style="width:100%">
+  <div class="text">Nature teaches more than she preaches. There are no sermons in stones. It is easier to get a spark out of a stone than a moral. —John Burroughs
+
+</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"> 10/ 10</div>
+  <img src="lotus.jpg" style="width:100%">
+  <div class="text">16. For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it. —Jacques-Yves Cousteau
+
+</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+   <span class="dot" onclick="currentSlide(4)"></span>
+   <span class="dot" onclick="currentSlide(5)"></span>
+   <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+	 <span class="dot" onclick="currentSlide(7)"></span>
+ <span class="dot" onclick="currentSlide(8)"></span>
+ <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+alert(location.hostname);
+</script>
+
+</body>
+</html> 
+
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">A_Naturography</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<hr style="font-family: 'Sofia';font-size: 22px";
+
+    <p>A_Naturography is a Nature image sharing and social media service designed to enable saving and discovery of information on the internet using images and on smaller scale videos and nature quotes </h3>
+</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:15%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:35%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:10%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">Quotes</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+           
+            <span class="w3-opacity">Contact Us</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">Quotes</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            
+            <span class="w3-opacity">Contact US</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black"); >Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+   
+   
+    <!-- Testimonials -->
+	<hr style="font-family: 'Sofia';font-size: 27px;
+    
+    <img src=".jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right"> A_Naturography</p>
+    <p>The tree which moves some to tears of joy is in the eyes of others only a green thing that stands in the way. Some see nature all ridicule and deformity... and some scarce see nature at all. But to the eyes of the man of imagination, nature is imagination itself.
+</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="IMG1.jpeg" style="width:100%">
+		
+		<!DOCTYPE html>
+<html>
+<head>
+<meta name="IMG.jpeg" content="width=device-width, initial-scale=1">
+<style>
+* {
+  
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>  
+<div class="zoom"></div>
+
+</body>
+</html>
+
+
+
+		
+		
+		
+		
+       
+<div class="container">
+  <img src="IMG2.jpeg" alt="Nature" style="width:100%;">
+  <div class="text-block">
+      </div>
+</div>
+        <img src="IMG6.jpeg" style="width:100%">
+         <img src="IMG29.jpg" style="width:100%">
+		 
+<div class="container">
+  <img src="IMG32.jpg" alt="Nature" style="width:100%;">
+  <div class="text-block">
+    </div>
+</div>
+
+<style>
+.container {
+  position: relative;
+  font-family: Sofia;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: White;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</style>
+
+		 <img src="IMG35.jpg" style="width:100%">
+		 <img src="IMG34.jpg" style="width:100%">
+		 <img src="IMG46.jpg" style="width:100%">
+		<img src="IMG40.jpg" style="width:100%">
+		<img src="IMG41.jpg" style="width:100%">
+		<img src="IMG56.jpg" style="width:100%">
+		<img src="IMG58.jpg" style="width:100%">
+		<img src="IMG55.jpg" style="width:100%">
+		<img src="IMG53.jpg" style="width:100%">
+		<img src="IMG52.jpg" style="width:100%">
+        <img src="IMG54.jpg" style="width:100%">
+		<img src="IMG64.jpg" style="width:100%">
+		<img src="IMG65.jpg" style="width:100%">
+		<img src="IMG66.jpg" style="width:100%">
+		<img src="IMG67.jpg" style="width:100%">
+		<img src="IMG77.jpg" style="width:100%">
+		<img src="IMG78.jpg" style="width:100%">
+		<img src="IMG79.jpg" style="width:100%">
+		<img src="IMG80.jpg" style="width:100%">
+		<img src="IMG86.jpg" style="width:100%">
+		<img src="IMG87.jpg" style="width:100%">
+		<img src="IMG89.jpg" style="width:100%">
+		<img src="IMG81.jpg" style="width:100%">
+        <img src="IMG92.jpg" style="width:100%">
+		<img src="IMG93.jpg" style="width:100%">
+		<img src="IMG101.jpg" style="width:100%">
+		<img src="IMG98.jpg" style="width:100%">
+				<img src="IMG95.jpg" style="width:100%">
+
+
+
+
+
+
+      </div>
+
+      <div class="w3-half">
+        <img src="IMG4.jpeg" style="width:100%">
+        <img src="IMG30.jpg" style="width:100%">
+        <img src="IMG31.jpeg" style="width:100%">
+		<img src="IMG38.jpg" style="width:100%">
+		<img src="IMG39.jpg" style="width:100%">
+	    <img src="IMG45.jpg" style="width:100%">
+		<img src="IMG49.jpg" style="width:100%">
+		<img src="IMG50.jpg" style="width:100%">
+		<img src="IMG59.jpg" style="width:100%">
+		<img src="IMG60.jpg" style="width:100%">
+		<img src="IMG61.jpg" style="width:100%">
+		<img src="IMG62.jpg" style="width:100%">
+		<img src="IMG63.jpg" style="width:100%">
+         <img src="IMG68.jpg" style="width:100%">
+		<img src="IMG672.jpg" style="width:100%">
+		<img src="IMG69.jpg" style="width:100%">
+        <img src="IMG71.jpg" style="width:100%">
+		<img src="IMG73.jpg" style="width:100%">
+		<img src="IMG74.jpg" style="width:100%">
+		<img src="IMG75.jpg" style="width:100%">
+        <img src="IMG76.jpeg" style="width:100%">
+		<img src="IMG81.jpg" style="width:100%">
+	   <img src="IMG82.jpg" style="width:100%">
+	   	<img src="IMG83.jpg" style="width:100%">
+		<img src="IMG84.jpg" style="width:100%">
+		<img src="IMG85.jpg" style="width:100%">
+		<img src="IMG90.jpg" style="width:100%">
+		<img src="IMG91.jpg" style="width:100%">
+		<img src="IMG94.jpg" style="width:100%">
+		<img src="IMG95.jpg" style="width:100%">
+		<img src="IMG102.jpg" style="width:100%">
+
+
+
+
+
+
+
+
+
+
+		
+
+       
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>India, Amravati</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 91 - 8459291488</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ashwikbire@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green"> a_naturography(</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
